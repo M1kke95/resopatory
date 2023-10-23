@@ -1,9 +1,8 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
+import org.example.IsLeapYear;
 import org.example.LeapYear;
 public class LeapYearTest {
-
 
 
     @Test
@@ -31,7 +30,6 @@ public class LeapYearTest {
     }
 
 
-
     @Test
     public void NotLeapYear_not_divisible_by_4() {
         // 2003 (2011, 2019) isnot* divisible by 4.
@@ -48,51 +46,46 @@ public class LeapYearTest {
         assertFalse(LeapYear.isLeapYear(1700));
 
     }
-}
 
-/*
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import org.example.IsLeapYear;
-
-public class test_isLeapYear {
 
     @Test
-    public void test_isLeapYear(){
+    public void test_isLeapYear() {
         assertTrue(IsLeapYear.isLeapYear(2000)); // Test med et årstall for ett skuddår
     }
 
     @Test
-    public void test_isNotLeapYear(){
+    public void test_isNotLeapYear() {
         assertFalse(IsLeapYear.isLeapYear(2001)); //Test med et årstall for et år som ikke er skuddår
     }
+
     @Test
-    public void twoYearsAfterLeapYear(){
+    public void twoYearsAfterLeapYear() {
         assertFalse(IsLeapYear.isLeapYear(2002)); //Test med et årstall for et år som ikke er skuddår
     }
 
     @Test
-    public void ThreeYearsAfterLeapYear(){
+    public void ThreeYearsAfterLeapYear() {
         assertFalse(IsLeapYear.isLeapYear(2003)); //Test med et årstall for et år som ikke er skuddår
     }
 
     @Test
-    public void FourYearsAfterLeapYear(){
+    public void FourYearsAfterLeapYear() {
         assertTrue(IsLeapYear.isLeapYear(2004)); //Test med et årstall for et år som ikke er skuddår
     }
 
 
     @Test
-    public void FalseIfDevidableByBothFourAndHoundred(){
+    public void FalseIfDevidableByBothFourAndHoundred() {
         assertFalse(IsLeapYear.isLeapYear(1700)); //Test med et årstall for et år som ikke er skuddår
     }
+
     @Test
-    public void FalseIfDevidableByBothFourAndHoundred2(){
+    public void FalseIfDevidableByBothFourAndHoundred2() {
         assertFalse(IsLeapYear.isLeapYear(1800)); //Test med et årstall for et år som ikke er skuddår
     }
+
     @Test
-    public void FalseIfDevidableByBothFourAndHoundred3(){
+    public void FalseIfDevidableByBothFourAndHoundred3() {
         assertFalse(IsLeapYear.isLeapYear(2100)); //Test med et årstall for et år som ikke er skuddår
     }
-
-}*/
+}
